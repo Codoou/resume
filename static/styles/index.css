@@ -1,0 +1,91 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: #F8F8FF;
+    /* padding-top: 150px; */
+}
+
+a,
+a:active,
+a:visited,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: dashed 1px rgba(0, 0, 0, 0.4);
+    padding-bottom: 2px;
+    transition: border-bottom-color 500ms ease-in-out;
+    color: gray;
+}
+
+a:focus,
+a:hover {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.4);
+    outline: none;
+}
+
+#container {
+    padding: 15%;
+}
+
+@media only screen and (max-width: 600px) {
+    #container {
+        padding: 5%;
+    }
+}
+
+#name_card {
+    display: flex;
+    align-content: flex-start;
+}
+
+#top_area {
+    display: flex;
+}
+
+#name_card_image {
+    border-radius: 50%;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#name_card_name {
+    padding-top: 1em;
+    padding-left: .25em;
+    font-size: large;
+    flex-grow: 1;
+}
+
+#name_card_description {
+    flex-grow: 1;
+    font-size: medium;
+}
+
+#menu {
+    padding-top: 1em;
+    margin-left: auto;
+}
+
+#menu a {
+    margin-left: .5em;
+}
+
+.employment_card {
+    margin-top: 2em;
+}
+
+.employment_card_header {
+    margin-top: 3em;
+}
+
+.employment_card_status {
+    display: inline-block;
+    border-radius: 5%;
+    border: solid black 1px;
+    padding: .5em;
+}
+
+.employment_card_status:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
